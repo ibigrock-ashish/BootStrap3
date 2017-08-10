@@ -87,10 +87,6 @@ a {
   border-color: #9c9090;
 }
 
-nav .active a:hover, .navbar-nav .active a:focus {
-  background-color:transparent;
-}
-
 .navbar-nav .dropdown a .caret {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
