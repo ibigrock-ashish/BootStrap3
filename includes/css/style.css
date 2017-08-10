@@ -32,14 +32,42 @@
   border-radius: .25em;
 }
 
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: transparent;
+}
+
 body {
   margin: 0;
   font-family: 'Slabo 27px', serif;
   /*background:url("../../img/body.png");*/
   background-size: cover;
   color:#000000;
-  -webkit-font-smoothing: antialiased;
+  /*-webkit-font-smoothing: antialiased;*/
   /*text-rendering: optimizeLegibility;*/
+}
+
+.signup {
+  margin-top: 6px;
+  margin-left: 4px;
+}
+
+.modal-content {
+  color :#000000;
+}
+
+.form-group .btn-success {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.form-group .btn-warning {
+  margin-top: 15px;
 }
 
 .textbox{
@@ -116,16 +144,15 @@ h2{
 .photography-image{
 
   background:url("../../img/photography.png");
-  /*width: 220px;*/
   height: 220px;
-  margin-top: 70px;
+  margin-top: 15%;
   background-size:100%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .direction-image{
-  margin-top: 70px;
+  margin-top: 15%;
   background:url("../../img/direction.png");
   /*width: 220px;*/
   height: 220px;
@@ -135,7 +162,7 @@ h2{
 }
 
 .acting-image{
-  margin-top: 70px;
+  margin-top: 15%;
   background:url("../../img/acting.png");
   /*width: 430px;*/
   height: 220px;
@@ -145,16 +172,12 @@ h2{
 }
 
 /*Styling end to end unit*/
-.herounit {
-	/*margin-top: 115px;*/
-	height : 500px;
-	padding :14px 16px;
+.jumbotron {
 	margin : 0;
-	text-align: center;
-	background:url("../../img/star.png");
-  background-size:100%;
-  background-repeat: no-repeat;
-  background-position: center center;
+	background:url("../../img/star.png") no-repeat center center;
+  background-size:cover;
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 /*Styling footer*/
@@ -202,8 +225,4 @@ footer {
 .fa-instagram {
   background: #125688;
   color: #ffffff;
-}
-
-article {
-	margin :0 0 5px 0;
 }

@@ -22,164 +22,193 @@
 </head>
 <body>
 
-	<main class="container"> <!--Container with 12 grid-->
+	<main> <!--Container with 12 grid-->
+		<div class="container">
+			<nav>
+				<div class="navbar navbar-fixed-top">
+					<div class="container">
 
-		<nav class="navbar navbar-fixed-top">
-			<div class="container">
+						<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+						<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
 
-				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				
-				<a class="navbar-brand" href="#">SuccessDestination</a>
+						<a class="navbar-brand" href="#">SuccessDestination</a>
 
-				<div class="nav-collapse collapse navbar-responsive-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#">Home</a>
-						</li>
-
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cources <strong class="caret"></strong></a>
-
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Photography</a>
+						<div class="nav-collapse collapse navbar-responsive-collapse">
+							<ul class="nav navbar-nav">
+								<li class="active">
+									<a href="#">Home</a>
 								</li>
 
-								<li>
-									<a href="#">Direction</a>
-								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cources <strong class="caret"></strong></a>
 
-								<li>
-									<a href="#">Acting</a>
-								</li>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Photography</a>
+										</li>
 
-								<li>
-									<a href="#">Theatre Acting</a>
-								</li>
+										<li>
+											<a href="#">Direction</a>
+										</li>
 
-								<li>
-									<a href="#">Social Marketing</a>
-								</li>
-							</ul><!-- end dropdown-menu -->
-						</li>
-					</ul>
+										<li>
+											<a href="#">Acting</a>
+										</li>
 
-					<ul class="nav navbar-nav pull-right">
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle signup" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign-Up <strong class="caret"></strong></a>
+										<li>
+											<a href="#">Theatre Acting</a>
+										</li>
 
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#"><span class="glyphicon glyphicon-home"></span> Existing User</a>
-								</li>
-
-								<li>
-									<a href="#"><span class="glyphicon glyphicon-plus"></span> New User</a>
-								</li>
-
-								<li>
-									<a href="#"><span class="glyphicon glyphicon-pencil"></span>In As Guest</a>
+										<li>
+											<a href="#">Social Marketing</a>
+										</li>
+									</ul><!-- end dropdown-menu -->
 								</li>
 							</ul>
-						</li>
-					</ul><!-- end nav pull-right -->
 
-					<form class="navbar-form pull-right">
-						<input type="text" class="form-control textbox" placeholder="Search this site..." id="searchInput">
-						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-					</form><!-- end navbar-form -->
+							<a href="#signupModal" role="button" class="btn btn-default pull-right signup" data-toggle="modal"><span class="glyphicon glyphicon-user"></span>Sign-Up!</a>
 
-				</div><!-- end nav-collapse -->
-				
-			</div><!-- end container -->
-		</nav><!-- end navbar -->
+							<div class="modal fade" id="signupModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
 
-		<input type="checkbox" class="read-more" id="reading"/>
+											<h4 class="modal-title">Sign Up</h4>
+										</div><!-- end modal-header -->
+										<div class="modal-body">
+											<h4>Fill in the details</h4>
+											<div>
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Name</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputName" placeholder="Name" type="text">
+													</div>
+												</div>
 
-		<article id="paragraph1" class="col-sm-4 read"> <!--3 grid article covering 25% of space-->
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+													</div>
+												</div>
 
-			<!-- <img src="img/photography.png" alt="Photography Image"> -->
-			<div class = "photography-image"></div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputMessage">Username</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputUsername" placeholder="Username" type="username">
+														<button class="btn btn-success pull-right" type="submit">Submit</button>
+														<button class="btn btn-warning pull-right" data-dismiss="modal" type="button">Close</button>
+													</div>
+												</div>
+											</form>
+											</div>
+										</div><!-- end modal-body -->
+									</div>
+								</div>
+							</div>
 
-			<h4>Photography</h4>
+							<form class="navbar-form pull-right">
+								<input type="text" class="form-control textbox" placeholder="Search this site..." id="searchInput">
+								<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+							</form><!-- end navbar-form -->
 
-			When photographers talk about “exposure,” we simply mean the brightness or darkness of a photo.  It seems simple enough to take a photo that is correctly exposed (has the proper brightness or darkness), but in reality it can be quite the trick. If you're reading this Photo Basics series, it probably means that you currently shoot on the “Green mode” of your camera–or the automatic setting.  That means the camera entirely controls the exposure of the picture.<span class="more"> When you shoot on automatic mode, your camera selects an aperture setting, an ISO setting, a shutter speed, and a host of other settings for you.
-			Automatic can be handy, but it also seriously limits your creative ability to make a beautiful picture.
-			Want proof that automatic isn't the best way to shoot?
-		</span>
-	</article><!--end paragraph1-->
+						</div><!-- end nav-collapse -->
 
-	<article id="paragraph2" class="col-sm-4 read"> <!--3 grid article covering 25% of space-->
+					</div><!-- end container -->
+				</div>
+			</nav><!-- end navbar -->
 
-		<!-- <img src="img/direction.png" alt="Direction Image"> -->
-		<div class = "direction-image"></div>
+			<input type="checkbox" class="read-more" id="reading"/>
 
-		<h4>Direction</h4>
+			<article id="paragraph1" class="col-sm-4 read"> <!--3 grid article covering 25% of space-->
 
-		A movie director is the chief person responsible for the creative aspects of film production. While creating the look of a film, movie directors may make script changes, determine movie locations, finalize costume designs, approve special effects, and provide coaching to actors. Jobs may be stressful, with often working under deadlines. Filming and directing in a wide range of weather conditions is also common in this profession.<span class="more"> Formal education and training as a director is not required for a career in the field. Many movie directors begin making movies, such as short films or home movies, before going to film school. Others learn basic skills creatively without ever earning a film degree. </span>
-	</article><!--end paragraph2-->
+				<!-- <img src="img/photography.png" alt="Photography Image"> -->
+				<div class = "photography-image"></div>
 
-	<article id="mainContent" class="col-sm-4 read"> <!--3 grid article covering 50% of space-->
+				<h4>Photography</h4>
 
-		<!-- <img class="acting" src="img/acting.png" alt="Acting Image"> -->
-		<div class = "acting-image"></div>
+				When photographers talk about “exposure,” we simply mean the brightness or darkness of a photo.  It seems simple enough to take a photo that is correctly exposed (has the proper brightness or darkness), but in reality it can be quite the trick. If you're reading this Photo Basics series, it probably means that you currently shoot on the “Green mode” of your camera–or the automatic setting.  That means the camera entirely controls the exposure of the picture.<span class="more"> When you shoot on automatic mode, your camera selects an aperture setting, an ISO setting, a shutter speed, and a host of other settings for you.
+				Automatic can be handy, but it also seriously limits your creative ability to make a beautiful picture.
+				Want proof that automatic isn't the best way to shoot?
+			</span>
+		</article><!--end paragraph1-->
 
-		<h4>Acting</h4>
+		<article id="paragraph2" class="col-sm-4 read"> <!--3 grid article covering 25% of space-->
 
-		Method acting is a famous acting technique that requires one to deeply embody their character. Learning how to method act requires a commitment to the process and a consistent practice schedule. However, the more you spend time practicing skills and techniques, the quicker you will be able to be in character and the better you will be able to perform. There are many resources and exercises that can help you achieve your desired level of method acting.<span class="more"> Enrolling in an institution that specializes in method acting will provide you with classes, resources, and information about the history and techniques of method acting. Most programs also offer hands-on experience through class led performances as well as school wide performances.</span>
-	</article><!--end mainContent-->
+			<!-- <img src="img/direction.png" alt="Direction Image"> -->
+			<div class = "direction-image"></div>
 
-	<label for="reading" class="more-trigger"></label>
-	<div class="container">
-		<article class="herounit"> <!--Full width hero unit--><h4>.</h4></article><!--end herounit-->
+			<h4>Direction</h4>
+
+			A movie director is the chief person responsible for the creative aspects of film production. While creating the look of a film, movie directors may make script changes, determine movie locations, finalize costume designs, approve special effects, and provide coaching to actors. Jobs may be stressful, with often working under deadlines. Filming and directing in a wide range of weather conditions is also common in this profession.<span class="more"> Formal education and training as a director is not required for a career in the field. Many movie directors begin making movies, such as short films or home movies, before going to film school. Others learn basic skills creatively without ever earning a film degree. </span>
+		</article><!--end paragraph2-->
+
+		<article id="mainContent" class="col-sm-4 read"> <!--3 grid article covering 50% of space-->
+
+			<!-- <img class="acting" src="img/acting.png" alt="Acting Image"> -->
+			<div class = "acting-image"></div>
+
+			<h4>Acting</h4>
+
+			Method acting is a famous acting technique that requires one to deeply embody their character. Learning how to method act requires a commitment to the process and a consistent practice schedule. However, the more you spend time practicing skills and techniques, the quicker you will be able to be in character and the better you will be able to perform. There are many resources and exercises that can help you achieve your desired level of method acting.<span class="more"> Enrolling in an institution that specializes in method acting will provide you with classes, resources, and information about the history and techniques of method acting. Most programs also offer hands-on experience through class led performances as well as school wide performances.</span>
+		</article><!--end mainContent-->
+
+		<label for="reading" class="more-trigger"></label>
+		<div class="jumbotron">
+		</div>
+		<section id="paragraph3" class="col-sm-12"> <!--2 article column with 3 vertical article-->
+			<h4>Related Topics</h4>
+			<article class="col-6">
+				<h4>Theatre Acting</h4>
+				In this Basic Acting and Theatre workshop participants explore creation of an entire production, through creativity, experimentation, physical training, team work and self discovery while understanding the basics of theatre. The workshop also focuses on physical and improvisational theatre. Thus this orientation and workshop forms an important part of a participants transition into the Yours Truly style of working.
+
+				This workshop process helps participant to overcome stage fright, inhibitions, push physical, mental and creative boundaries. It is an attempt to discover self and understand working in teams using methods that are basic yet fundamental in approach. 
+
+				The workshop focuses on ‘FUN with art’ through experiential learning with an enviornment that is highly non-judgmental and open.
+
+				<ul>
+					<li>Learn your lines so well that you never have to worry about them.</li>
+					<li>Keep a notebook about the play, the character, the period, your moves. It'll help you remember what you have done so far – especially if you're having to rehearse in your spare time rather than all day, every day.</li>
+					<li>Never go dead for a second on stage. Even if you are doing nothing, do it actively. Listen.</li>
+					<li>If something goes wrong – say someone drops something – don't ignore it. Try to deal with it in character.</li>
+					<li>Warm up your voice and body. Get used to the size of the auditorium; if you don't know it already, go to the worst seats in the house and have conversations with people on the stage so you get to know what kind of energy is needed to be heard.</li>
+					<li>Be ambitious. The great actor, director and playwright Ann Jellicoe commissioned writers like Howard Barker and David Edgar, and put on magnificent, large-scale plays in Dorset that involved the whole community.</li>
+					<li>Try not to worry about embarrassing yourself. That's a lifetime's task.</li>
+				</ul>
+			</article>
+
+			<article class="col-sm-6">
+				<h4>Modelling Photography</h4>
+				Lets be honest, no model or agency is going to hire you if you don’t have any modeling or fashion pieces in your portfolio. You have to start somewhere, so find some friends who are up for modeling for you and hone your skills practicing with them. When you’re just starting you’ll most likely do a lot of shoots for free, but focus on getting in as much good work as possible and it will pay off down the road. If your friends are happy with your photos, they’ll most likely show their friends and as well as put them on Facebook and other social sites, which will only help in getting you exposure.
+			</article>
+			<article class="col-sm-6">
+				<h4>Handle Stardum</h4>
+				Probably the most important thing you can do as a successful actor is not let it get to your head. In spite of what the fans have told you, you are not the almighty. You are still just a flesh and blood person and as quickly as you became a star, that is how fast it can all come crashing down on you. So many stars who are big one day are gone the next and this dose of reality is too much for them to handle. As a result, their lives are never the same, many taking to drugs and booze. So keep your head about things. Make sure you put your success into perspective.gathered monarchies. On 20 April 1792 therefore, they declared war on Austria.[54] On 10 August 1792, an  into a bsolute 
+			</article>
+			<article class="col-sm-6">
+				<h4>How to sell talent</h4>
+				Do you know what you offer to others? If you’re a physician, for example, do you offer relief from suffering? Wellness? Referrals? Diagnostic services? Stern lectures about smoking? Medicines? Preventive care?
+				All of the above, perhaps. But how do you share this with your patients in a way that they can remember it and benefit from it? Work on the exact description of what you offer and you’ll never hesitate to share it with anyone at any time. And you’ll smile while you’re sharing it because you believe in it so much.
+				The phrasing makes it even more real for you and the client. It becomes a meme.
+			</article>
+		</section>
 	</div>
-	<section id="paragraph3" class="col-sm-12"> <!--2 article column with 3 vertical article-->
-		<h4>Related Topics</h4>
-		<article class="col-6">
-			<h4>Theatre Acting</h4>
-			In this Basic Acting and Theatre workshop participants explore creation of an entire production, through creativity, experimentation, physical training, team work and self discovery while understanding the basics of theatre. The workshop also focuses on physical and improvisational theatre. Thus this orientation and workshop forms an important part of a participants transition into the Yours Truly style of working.
-
-			This workshop process helps participant to overcome stage fright, inhibitions, push physical, mental and creative boundaries. It is an attempt to discover self and understand working in teams using methods that are basic yet fundamental in approach. 
-
-			The workshop focuses on ‘FUN with art’ through experiential learning with an enviornment that is highly non-judgmental and open.
-
-			<ul>
-				<li>Learn your lines so well that you never have to worry about them.</li>
-				<li>Keep a notebook about the play, the character, the period, your moves. It'll help you remember what you have done so far – especially if you're having to rehearse in your spare time rather than all day, every day.</li>
-				<li>Never go dead for a second on stage. Even if you are doing nothing, do it actively. Listen.</li>
-				<li>If something goes wrong – say someone drops something – don't ignore it. Try to deal with it in character.</li>
-				<li>Warm up your voice and body. Get used to the size of the auditorium; if you don't know it already, go to the worst seats in the house and have conversations with people on the stage so you get to know what kind of energy is needed to be heard.</li>
-				<li>Be ambitious. The great actor, director and playwright Ann Jellicoe commissioned writers like Howard Barker and David Edgar, and put on magnificent, large-scale plays in Dorset that involved the whole community.</li>
-				<li>Try not to worry about embarrassing yourself. That's a lifetime's task.</li>
-			</ul>
-		</article>
-
-		<article class="col-sm-6">
-			<h4>Modelling Photography</h4>
-			Lets be honest, no model or agency is going to hire you if you don’t have any modeling or fashion pieces in your portfolio. You have to start somewhere, so find some friends who are up for modeling for you and hone your skills practicing with them. When you’re just starting you’ll most likely do a lot of shoots for free, but focus on getting in as much good work as possible and it will pay off down the road. If your friends are happy with your photos, they’ll most likely show their friends and as well as put them on Facebook and other social sites, which will only help in getting you exposure.
-		</article>
-		<article class="col-sm-6">
-			<h4>Handle Stardum</h4>
-			Probably the most important thing you can do as a successful actor is not let it get to your head. In spite of what the fans have told you, you are not the almighty. You are still just a flesh and blood person and as quickly as you became a star, that is how fast it can all come crashing down on you. So many stars who are big one day are gone the next and this dose of reality is too much for them to handle. As a result, their lives are never the same, many taking to drugs and booze. So keep your head about things. Make sure you put your success into perspective.gathered monarchies. On 20 April 1792 therefore, they declared war on Austria.[54] On 10 August 1792, an  into a bsolute 
-		</article>
-		<article class="col-sm-6">
-			<h4>How to sell talent</h4>
-			Do you know what you offer to others? If you’re a physician, for example, do you offer relief from suffering? Wellness? Referrals? Diagnostic services? Stern lectures about smoking? Medicines? Preventive care?
-			All of the above, perhaps. But how do you share this with your patients in a way that they can remember it and benefit from it? Work on the exact description of what you offer and you’ll never hesitate to share it with anyone at any time. And you’ll smile while you’re sharing it because you believe in it so much.
-			The phrasing makes it even more real for you and the client. It becomes a meme.
-		</article>
-	</section>
-
 </main><!--end container-->
 
 <footer>
 	<div class="container">
 		<div class="row">
+
+			<div class="col-sm-4">
+				<h6>About Us</h6>
+				<p>We provide cources like Acting , Professional photography , Movie Direction , Theater Acting , And various councelling sessions to groom you and teach you how to handle stardom. If you are ready to enter Glam Industry we are your gateway to it. <hr> Visit Us : SuccessDestination ,Near Waikīkī beach Honolulu, Hawaii, U.S.A </p>
+			</div><!-- end col-sm-4 -->
 
 			<div class="col-sm-2">
 				<h6>Follow Us</h6>
@@ -201,18 +230,9 @@
 			</div><!-- end col-sm-2 -->
 
 			<div class="col-sm-4">
-				<h6>About Us</h6>
-				<p>We provide cources like Acting , Professional photography , Movie Direction , Theater Acting , And various councelling sessions to groom you and teach you how to handle stardom. If you are ready to enter Glam Industry we are your gateway to it.</p>
-			</div><!-- end col-sm-4 -->
-
-			<div class="col-sm-2">
-				<h6>Developed By Ashish</h6>
+			<h6>Our Location</h6>
+				<iframe width="100%" height="120" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=waikiki+beach&amp;aq=&amp;sll=19.896766,-155.582782&amp;sspn=8.711424,11.854248&amp;ie=UTF8&amp;hq=&amp;hnear=Waikiki+Beach,+Honolulu,+Hawaii,+United+States&amp;t=m&amp;ll=21.277298,-157.8265&amp;spn=0.015996,0.036478&amp;z=14&amp;output=embed"></iframe>
 			</div><!-- end col-sm-2 -->
-
-			<div class="col-sm-2">
-				<h6>Copyright &copy; 2017</h6>
-			</div><!-- end col-sm-2 -->
-
 
 		</div><!-- end row -->
 	</div><!-- end container -->
@@ -225,6 +245,8 @@
 
 <!-- Bootstrap JS -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script src="includes/js/script.js"></script>
 
 </body><!--end body-->
 </html><!--end html-->
