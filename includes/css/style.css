@@ -88,12 +88,13 @@ a {
 }
 
 nav .active a:hover, .navbar-nav .active a:focus {
-  background-color:#d5d5d5;
+  background-color:transparent;
 }
 
 .navbar-nav .dropdown a .caret {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
+  color : #ffffff;
 }
 
 .navbar-nav .open a, .navbar-nav .open a:hover, .navbar-nav .open a:focus {
