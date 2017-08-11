@@ -29,3 +29,7 @@ $(function() {
 	
 	
 });
+
+function myFunction() {
+    alert("You will receive a mail on provided email id");
+}
